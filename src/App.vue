@@ -1,6 +1,8 @@
 <template>
   <div id="app">
-    <ec-header></ec-header>
+    <router-view name="header"></router-view>
+    <router-view name="content"></router-view>
+    <!-- <router-view name="footer"></router-view> -->
   </div>
 </template>
 
@@ -8,10 +10,7 @@
   import ecHeader from './components/Header'
 
   export default {
-    name: 'app',
-    components: {
-      ecHeader
-    }
+    name: 'app'
   }
 </script>
 
