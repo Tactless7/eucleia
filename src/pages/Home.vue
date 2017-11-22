@@ -9,9 +9,9 @@
 </template>
 
 <script>
-  import ecPresentation from './Presentation'
-  import ecStatus from './Status'
-  import ecTwitter from './Twitter'
+  import ecPresentation from '../components/Presentation'
+  import ecStatus from '../components/Status'
+  import ecTwitter from '../components/Twitter'
   
   export default {
     name: 'Home',
