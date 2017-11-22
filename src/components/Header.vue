@@ -26,6 +26,7 @@
   @import '../colors.styl'
   
   .ec-header
+    margin-bottom 2em
     &:after
       display block
       content ""
