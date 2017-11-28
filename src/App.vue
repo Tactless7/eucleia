@@ -7,8 +7,6 @@
 </template>
 
 <script>
-  import ecHeader from './components/Header'
-
   export default {
     name: 'app'
   }

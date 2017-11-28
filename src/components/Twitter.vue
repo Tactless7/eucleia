@@ -5,7 +5,6 @@
 </template>
 
 <script>
-
   export default {
     name: 'Twitter'
   }
@@ -20,5 +19,3 @@
     border solid black 1px
     margin 1em
 </style>
-
-

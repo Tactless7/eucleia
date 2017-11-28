@@ -2,9 +2,10 @@
   <div class="ec-header">
     <ul class="ec-header-navbar">
       <li><a href="/">Home</a></li>
-      <li><a href="/about">A propos</a></li>
+      <!-- <li><a href="/about">A propos</a></li> -->
       <li><a href="/cv">CV</a></li>
       <li><a href="/projets">Projets</a></li>
+      <li><a href="/blog">Blog</a></li>
       <li><a href="/contact">Contact</a></li>
     </ul>
 
