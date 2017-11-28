@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Header from '@/components/Header'
+import Footer from '@/components/Footer'
 import Home from '@/pages/Home'
 import Blog from '@/pages/Blog'
 
@@ -14,8 +15,8 @@ export default new Router({
       name: 'Home',
       components: {
         header: Header,
-        content: Home
-        // footer: Footer
+        content: Home,
+        footer: Footer
       }
     },
     {
@@ -23,8 +24,8 @@ export default new Router({
       name: 'Blog',
       components: {
         header: Header,
-        content: Blog
-        // footer: Footer
+        content: Blog,
+        footer: Footer
       }
     }
   ]
