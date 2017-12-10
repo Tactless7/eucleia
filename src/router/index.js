@@ -4,6 +4,7 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import Home from '@/pages/Home'
 import Blog from '@/pages/Blog'
+import Cv from '@/pages/Cv'
 
 Vue.use(Router)
 
@@ -25,6 +26,15 @@ export default new Router({
       components: {
         header: Header,
         content: Blog,
+        footer: Footer
+      }
+    },
+    {
+      path: '/cv',
+      name: 'Cv',
+      components: {
+        header: Header,
+        content: Cv,
         footer: Footer
       }
     }
