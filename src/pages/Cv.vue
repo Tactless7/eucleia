@@ -60,7 +60,7 @@
           <div class="left-side">
             <h4>Développeuse Javascript</h4>
             <p>Avril 2017 - Mai 2017</p>
-            <a href="https://www.cityliv.fr"><img src="/src/assets/img/experiences/cityliv_logo.png" alt="Logo CityLiv"></a>
+            <img src="/src/assets/img/experiences/cityliv_logo.png" alt="Logo CityLiv">
           </div>
           <div class="right-side">
             <ul>
@@ -164,6 +164,8 @@
           img
             width 100%
             margin 5% auto
+        > img
+          width 50%
         p
           line-height 2em
       .right-side
