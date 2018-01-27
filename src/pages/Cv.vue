@@ -132,7 +132,7 @@
         > .ec-cv-skills-group
           width 30%
           padding 1em;
-          border solid black
+          border 2px solid $darkBlue
           h4
             text-align center
             font-size 1.4em
