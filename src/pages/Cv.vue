@@ -5,20 +5,36 @@
       <div class="ec-cv-category-content">
         <div class="ec-cv-skills-group">
           <h4>Langages</h4>
-          <div>
-            <img src="/src/assets/img/html_logo.png" alt="">
-            <img src="/src/assets/img/css_logo.png" alt="">
-            <img src="/src/assets/img/javascript_logo.png" alt="">
-            <img src="/src/assets/img/node_logo.png" alt="">
-            <img src="/src/assets/img/php_logo.png" alt="">
-            <img src="/src/assets/img/mysql_logo.png" alt="">
+          <div class="ec-cv-skills-imgs">
+            <img src="/src/assets/img/languages/html_logo.png" alt="Html">
+            <img src="/src/assets/img/languages/css_logo.png" alt="Css">
+            <img src="/src/assets/img/languages/javascript_logo.png" alt="Javascript ES6">
+            <img src="/src/assets/img/languages/node_logo.png" alt="Node.js">
+            <img src="/src/assets/img/languages/php_logo.png" alt="PHP">
+            <img src="/src/assets/img/languages/mysql_logo.png" alt="mySQL">
           </div>
         </div>
         <div class="ec-cv-skills-group">
-          <h4>Framework & Libraries</h4>
+          <h4>Framework &amp; Libraries</h4>
+          <div class="ec-cv-skills-imgs">
+            <img src="/src/assets/img/frameworks/vuejs_logo.svg" alt="Vue.js">
+            <img src="/src/assets/img/frameworks/mongo_logo.svg" alt="MongoDB">
+            <img src="/src/assets/img/frameworks/expressjs_logo.png" alt="Express.js">
+            <img src="/src/assets/img/frameworks/angular_logo.svg" alt="Angular 4">
+            <img src="/src/assets/img/frameworks/laravel_logo.png" alt="Laravel">
+            <img src="/src/assets/img/frameworks/sass_logo.png" alt="SASS">
+          </div>
         </div>
         <div class="ec-cv-skills-group">
           <h4>Outils</h4>
+          <div class="ec-cv-skills-imgs">
+            <img src="/src/assets/img/tools/git_logo.png" alt="Git">
+            <img src="/src/assets/img/tools/rancher_logo.svg" alt="Rancher">
+            <img src="/src/assets/img/tools/docker_logo.png" alt="Docker">
+            <img src="/src/assets/img/tools/ionic_logo.svg" alt="Ionic">
+            <img src="/src/assets/img/tools/firebase_logo.png" alt="Firebase">
+            <img src="/src/assets/img/tools/postman_logo.png" alt="Postman">
+          </div>
         </div>
       </div>
     </section>
@@ -54,11 +70,27 @@
       &:not(:last-of-type)
         margin-bottom 2em
       > h3
-        font-size 1.5em
+        font-size 1.9em
+        margin-bottom 1em
         i
           margin-right 0.5em
+
       .ec-cv-category-content
         display flex
-
+        justify-content space-between
+        > .ec-cv-skills-group
+          width 30%
+          padding 1em;
+          border solid black
+          h4
+            text-align center
+            font-size 1.4em
+            margin-bottom 1em
+          .ec-cv-skills-imgs
+            width 100%
+            padding 5%
+            img
+              max-width 30%
+              max-height 200px
+              margin 1%
 </style>
-
