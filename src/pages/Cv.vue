@@ -41,6 +41,36 @@
 
     <section class="ec-cv-category ec-cv-experiences">
       <h3><i class="fa fa-lg fa-line-chart" aria-hidden="true"></i>Expériences</h3>
+      <div class="ec-cv-category-content flex-column">
+        <div class="ec-cv-experiences-item">
+          <div class="ec-cv-experiences-left">
+            <h4>Développeuse Fullstack JS</h4>
+            <p>Depuis Juin 2017</p>
+            <img src="/src/assets/img/experiences/logo_schoolmouv_couleur.svg" alt="Logo Schoolmouv">
+          </div>
+          <div class="ec-cv-experiences-right">
+            <ul>
+              <li><i class="fa fa-caret-right" aria-hidden="true"></i>Développement de nouvelles fonctionnalités pour le Site Web <a href="https://www.schoolmouv.fr" >Schoolmouv</a>.</li>
+              <li><i class="fa fa-caret-right" aria-hidden="true"></i>Amélioration de l'API.</li>
+              <li><i class="fa fa-caret-right" aria-hidden="true"></i>Conception et développement de l'Application Mobile Schoolmouv.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="ec-cv-experiences-item">
+          <div class="ec-cv-experiences-left">
+            <h4>Développeuse Javascript</h4>
+            <p>Avril 2017 - Mai 2017</p>
+            <img src="/src/assets/img/experiences/cityliv_logo.png" alt="Logo CityLiv">
+          </div>
+          <div class="ec-cv-experiences-right">
+            <ul>
+              <li><i class="fa fa-caret-right" aria-hidden="true"></i>Mise en place d'un outil de reporting du nombre de commandes et de livreurs.</li>
+              <li><i class="fa fa-caret-right" aria-hidden="true"></i>Automatisation de l'envoi à l'ensemble des collaborateurs de la société.</li>
+              <li><i class="fa fa-caret-right" aria-hidden="true"></i>Gestion du projet depuis le cahier des charges jusqu'à la mise en production.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="ec-cv-category ec-cv-school">
@@ -93,4 +123,47 @@
               max-width 30%
               max-height 200px
               margin 1%
+        > .ec-cv-experiences-item
+          display flex
+          justify-content space-between
+          width 100%
+          &:not(:last-of-type)
+            margin-bottom 2.5em
+          .ec-cv-experiences-left
+            display flex
+            flex-direction column
+            align-items center
+            width 30%
+            h4
+              font-size 1.1em
+              text-align center
+            img
+              max-width 50%
+              margin 5% 0
+            p
+              line-height 2em
+          .ec-cv-experiences-right
+            display flex
+            width 70%
+            margin auto 4%
+            ul
+              display flex
+              flex-direction column
+              justify-content center
+              height auto;
+              list-style-type none
+              li
+                line-height 2em
+                i 
+                  margin-right 0.5em
+            &:before
+              content ""
+              display block
+              width 1px
+              height 120px
+              margin-right 30px
+              background-color $grey
+  
+  .flex-column
+    flex-direction column
 </style>
