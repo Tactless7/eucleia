@@ -46,7 +46,7 @@
           <div class="left-side">
             <h4>Développeuse Fullstack JS</h4>
             <p>Depuis Juin 2017</p>
-            <img src="/src/assets/img/experiences/logo_schoolmouv_couleur.svg" alt="Logo Schoolmouv">
+            <a href="https://www.schoolmouv.fr"><img src="/src/assets/img/experiences/logo_schoolmouv_couleur.svg" alt="Logo Schoolmouv"></a>
           </div>
           <div class="right-side">
             <ul>
@@ -60,7 +60,7 @@
           <div class="left-side">
             <h4>Développeuse Javascript</h4>
             <p>Avril 2017 - Mai 2017</p>
-            <img src="/src/assets/img/experiences/cityliv_logo.png" alt="Logo CityLiv">
+            <a href="https://www.cityliv.fr"><img src="/src/assets/img/experiences/cityliv_logo.png" alt="Logo CityLiv"></a>
           </div>
           <div class="right-side">
             <ul>
@@ -80,17 +80,17 @@
           <div class="left-side">
             <h4>Formation Développement web</h4>
             <p>Septembre 2016 - Mars 2017</p>
-            <img src="/src/assets/img/experiences/simplon_logo.png" alt="Logo Simplon">
+            <a href="https://simplon.co"><img src="/src/assets/img/experiences/simplon_logo.png" alt="Logo Simplon"></a>
           </div>
           <div class="right-side">
             <ul>
-              <li><i class="fa fa-caret-right"></i>Front-End : HTML/CSS, Javascript ES6, React.js, Sass, Moment.js, Express.js</li>
+              <li><i class="fa fa-caret-right"></i>Front-End : HTML/CSS, Javascript ES6, React.js, Sass, Moment.js, Express.</li>
               <li><i class="fa fa-caret-right"></i>Back-End : Node.js, PHP, mySQL, Express.js, Laravel.</li>
               <li><i class="fa fa-caret-right"></i>Git, Brunch.</li>
-              <li><i class="fa fa-caret-right"></i>POO &#38; MVC</li>
-              <li><i class="fa fa-caret-right"></i>Méthodes Agiles: Scrum, Kanban/Trello, XP</li>
-              <li><i class="fa fa-caret-right"></i>Pair-programming</li>
-              <li><i class="fa fa-caret-right"></i>Sensibilisation à l' UX/UI</li>
+              <li><i class="fa fa-caret-right"></i>POO &#38; MVC.</li>
+              <li><i class="fa fa-caret-right"></i>Méthodes Agiles: Scrum, Kanban/Trello, XP.</li>
+              <li><i class="fa fa-caret-right"></i>Pair-programming.</li>
+              <li><i class="fa fa-caret-right"></i>Sensibilisation à l' UX/UI.</li>
               <li><i class="fa fa-caret-right"></i>Animation d'ateliers de programmation pour enfants en collaboration avec la Compagnie du Code.</li>
             </ul>
           </div>
@@ -159,9 +159,11 @@
         h4
           font-size 1.1em
           text-align center
-        img
+        a
           max-width 50%
-          margin 5% 0
+          img
+            width 100%
+            margin 5% auto
         p
           line-height 2em
       .right-side
