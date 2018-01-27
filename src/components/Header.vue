@@ -10,9 +10,14 @@
     </ul>
 
     <div class="ec-header-title">
-      <h1>Juliane Blier</h1>
-      <h2>Développeuse Web</h2>
-      <p class="ec-header-subtitle">Web maker, Passionnée de code et Saltimbanque du travail en équipe.</p>
+      <div class="ec-header-photo">
+        <img src="/src/assets/photo_bw.png" alt="Photo Juliane Blier">
+      </div>
+      <div class="ec-header-title-content">
+        <h1>Juliane Blier</h1>
+        <h2>Développeuse Web</h2>
+        <p class="ec-header-subtitle">Web maker, Passionnée de code et Saltimbanque du travail en équipe.</p>
+      </div>
     </div>
   </div>
 </template>
@@ -52,14 +57,29 @@
           text-decoration none
     
     .ec-header-title
-      margin-top 1.5em
-      text-align center
-      h1
-        font-size 2.3em
-      h2
-        font-size 1.8em
-        margin-bottom 0.5em
-      .ec-header-subtitle
-        font-style italic
-        font-size 1.2em
+      display flex
+      flex-direction row
+      justify-content center
+      width 80%
+      margin auto
+      .ec-header-photo
+        display flex
+        justify-content center
+        align-items center
+        width 25%
+        img
+          border-radius 5%
+          width 50%
+      .ec-header-title-content
+        width 75%
+        margin-top 1.5em
+        text-align center
+        h1
+          font-size 2.3em
+        h2
+          font-size 1.8em
+          margin-bottom 0.5em
+        .ec-header-subtitle
+          font-style italic
+          font-size 1.2em
 </style>
