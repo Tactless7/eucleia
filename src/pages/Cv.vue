@@ -144,6 +144,8 @@
               max-width 30%
               max-height 200px
               margin 1%
+              &:hover
+                transform scale(1.3)
     .ec-cv-school-experiences-item
       display flex
       justify-content space-between
