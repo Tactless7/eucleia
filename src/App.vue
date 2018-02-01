@@ -31,9 +31,12 @@
   #app
     font-family 'Avenir', Helvetica, Arial, sans-serif
     color $darkBlue
+    display flex
+    flex-direction column
+    justify-content space-between
 
   html, #app
-    height 100%
+    min-height 100vh
 
   body
     min-height 100%
