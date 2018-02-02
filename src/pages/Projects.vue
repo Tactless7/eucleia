@@ -1,7 +1,6 @@
 <template>
   <div class="ec-projects">
     <h3><i class="fa fa-flask" aria-hidden="true"></i>Projets</h3>
-    <!-- <h3><i class="fa fa-thumb-tack"></i>Projets</h3> -->
     <div class="ec-projects-container">
       <div class="ec-projects-card">
         <div class="ec-projects-card-background" style="background-image: url(http://placekitten.com/g/500/500)"></div>
