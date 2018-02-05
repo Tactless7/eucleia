@@ -38,17 +38,17 @@
 </template>
 
 <script>
-    name: 'Projects'
   export default {
+    name: 'Projects',
     data () {
       return {
         selected: 0,
         zoomed: false
       }
     },
-    methods : {
-      setSelected(number) {
-        this.selected = number;
+    methods: {
+      setSelected (number) {
+        this.selected = number
       }
     }
   }
