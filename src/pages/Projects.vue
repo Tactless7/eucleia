@@ -1,36 +1,13 @@
 <template>
   <div class="ec-projects">
     <h3><i class="fa fa-flask" aria-hidden="true"></i>Projets</h3>
-    <div class="ec-project-zoom" v-if="zoomed">
-      Ceci est le zoom {{this.selected}} du projet 
-    </div>
+    <ec-project-details v-if="details"></ec-project-details>
     <div class="ec-projects-container">
-      <div class="ec-projects-card" @click="setSelected(1)">
-        <div class="ec-projects-card-background" :class="{ selected: selected === 1 }" style="background-image: url(http://placekitten.com/g/500/500)"></div>
+      <div v-for="(project, index) in projects" class="ec-projects-card" @click="setSelected(index)">
+        <div class="ec-projects-card-background" :class="{ selected: selected === index }" style="background-image: url(http://placekitten.com/g/500/500)"></div>
         <div class="ec-projects-card-content">
-          <h4 class="ec-projects-card-title">Project Name</h4>
-          <p class="ec-projects-card-type">Projet Client</p>
-        </div>
-      </div>
-      <div class="ec-projects-card" @click="setSelected(2)">
-        <div class="ec-projects-card-background" :class="{ selected: selected === 2 }" style="background-image: url(http://placekitten.com/g/500/500)"></div>
-        <div class="ec-projects-card-content">
-          <h4 class="ec-projects-card-title">Project Name</h4>
-          <p class="ec-projects-card-type">Projet Client</p>
-        </div>
-      </div>
-      <div class="ec-projects-card" @click="setSelected(3)">
-        <div class="ec-projects-card-background" :class="{ selected: selected === 3 }" style="background-image: url(http://placekitten.com/g/500/500)"></div>
-        <div class="ec-projects-card-content">
-          <h4 class="ec-projects-card-title">Project Name</h4>
-          <p class="ec-projects-card-type">Projet Client</p>
-        </div>
-      </div>
-      <div class="ec-projects-card" @click="setSelected(4)">
-        <div class="ec-projects-card-background" :class="{ selected: selected === 4 }" style="background-image: url(http://placekitten.com/g/500/500)"></div>
-        <div class="ec-projects-card-content">
-          <h4 class="ec-projects-card-title">Project Name</h4>
-          <p class="ec-projects-card-type">Projet Client</p>
+          <h4 class="ec-projects-card-title">{{project.name}}</h4>
+          <p class="ec-projects-card-type">{{project.type}}</p>
         </div>
       </div>
     </div>
@@ -38,21 +15,28 @@
 </template>
 
 <script>
+  import ecProjectDetails from '../components/ProjectDetails'
+  import projects from '../data/projects'
+
   export default {
     name: 'Projects',
+    components: {
+      ecProjectDetails
+    },
     data () {
       return {
-        selected: 0,
-        zoomed: false
+        selected: null,
+        details: false,
+        projects: projects
       }
     },
     methods: {
       setSelected (number) {
-        this.displayZoomed(true)
+        this.displayDetails(true)
         this.selected = number
       },
-      displayZoomed (bool) {
-        this.zoomed = bool
+      displayDetails (bool) {
+        this.details = bool
       }
     }
   }
