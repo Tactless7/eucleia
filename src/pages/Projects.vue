@@ -1,6 +1,9 @@
 <template>
   <div class="ec-projects">
     <h3><i class="fa fa-flask" aria-hidden="true"></i>Projets</h3>
+    <div class="ec-project-zoom" v-if="zoomed">
+      Ceci est le zoom du projet 
+    </div>
     <div class="ec-projects-container">
       <div class="ec-projects-card" @click="setSelected(1)">
         <div class="ec-projects-card-background" :class="{ selected: selected === 1 }" style="background-image: url(http://placekitten.com/g/500/500)"></div>
@@ -39,7 +42,8 @@
   export default {
     data () {
       return {
-        selected: 0
+        selected: 0,
+        zoomed: false
       }
     },
     methods : {
@@ -74,6 +78,7 @@
       border solid $grey 1px
       border-top solid $orange 2px
       border-radius 0.5em
+      cursor pointer
       .ec-projects-card-background
         position absolute
         width 100%
