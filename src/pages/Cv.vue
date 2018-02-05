@@ -44,9 +44,11 @@
       <div class="ec-cv-category-content flex-column">
         <div class="ec-cv-school-experiences-item">
           <div class="left-side">
-            <h4>Développeuse Fullstack JS</h4>
-            <p>Depuis Juin 2017</p>
-            <a href="https://www.schoolmouv.fr"><img src="/src/assets/img/experiences/logo_schoolmouv_couleur.svg" alt="Logo Schoolmouv"></a>
+            <div>
+              <h4>Développeuse Fullstack JS</h4>
+              <p>Depuis Juin 2017</p>
+              <a href="https://www.schoolmouv.fr"><img src="/src/assets/img/experiences/logo_schoolmouv_couleur.svg" alt="Logo Schoolmouv"></a>
+            </div>
           </div>
           <div class="right-side">
             <ul>
@@ -58,9 +60,11 @@
         </div>
         <div class="ec-cv-school-experiences-item">
           <div class="left-side">
-            <h4>Développeuse Javascript</h4>
-            <p>Avril 2017 - Mai 2017</p>
-            <img src="/src/assets/img/experiences/cityliv_logo.png" alt="Logo CityLiv">
+            <div>
+              <h4>Développeuse Javascript</h4>
+              <p>Avril 2017 - Mai 2017</p>
+              <img src="/src/assets/img/experiences/cityliv_logo.png" alt="Logo CityLiv">
+            </div>
           </div>
           <div class="right-side">
             <ul>
@@ -78,9 +82,11 @@
       <div class="ec-cv-category-content flex-column">
         <div class="ec-cv-school-experiences-item">
           <div class="left-side">
-            <h4>Formation Développement web</h4>
-            <p>Septembre 2016 - Mars 2017</p>
-            <a href="https://simplon.co"><img src="/src/assets/img/experiences/simplon_logo.png" alt="Logo Simplon"></a>
+            <div>
+              <h4>Formation Développement web</h4>
+              <p>Septembre 2016 - Mars 2017</p>
+              <a href="https://simplon.co"><img src="/src/assets/img/experiences/simplon_logo.png" alt="Logo Simplon"></a>
+            </div>
           </div>
           <div class="right-side">
             <ul>
@@ -154,24 +160,34 @@
         margin-bottom 2.5em
       .left-side
         display flex
-        flex-direction column
-        justify-content center
-        align-items center
+        flex-direction row
         width 30%
-        h4
-          font-size 1.1em
-          text-align center
-        a
-          max-width 50%
-          img
-            width 100%
-            margin 5% auto
-        > img
-          width 50%
-        p
-          line-height 2em
+        > div
+          display flex
+          flex-direction column
+          justify-content center
+          align-items center
+          width 100%
+          h4
+            font-size 1.1em
+            text-align center
+          a
+            max-width 50%
+            img
+              width 100%
+              margin 5% auto
+          > img
+            width 50%
+          p
+            line-height 2em
+        &:after
+          content ""
+          width 1px
+          margin 1.5em 0 1.5em 2em
+          background-color $grey
       .right-side
         display flex
+        align-items stretch
         width 70%
         margin auto 4%
         ul
@@ -184,13 +200,6 @@
             line-height 2em
             i
               margin-right 0.5em
-        &:before
-          content ""
-          display block
-          width 1px
-          height 120px
-          margin auto 30px auto 0
-          background-color $grey
   
   .flex-column
     flex-direction column
