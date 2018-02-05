@@ -2,7 +2,7 @@
   <div class="ec-projects">
     <h3><i class="fa fa-flask" aria-hidden="true"></i>Projets</h3>
     <div class="ec-project-zoom" v-if="zoomed">
-      Ceci est le zoom du projet 
+      Ceci est le zoom {{this.selected}} du projet 
     </div>
     <div class="ec-projects-container">
       <div class="ec-projects-card" @click="setSelected(1)">
@@ -48,7 +48,11 @@
     },
     methods: {
       setSelected (number) {
+        this.displayZoomed(true)
         this.selected = number
+      },
+      displayZoomed (bool) {
+        this.zoomed = bool
       }
     }
   }
@@ -79,6 +83,10 @@
       border-top solid $orange 2px
       border-radius 0.5em
       cursor pointer
+      &:hover
+        .ec-projects-card-background
+          opacity 0.3
+          transition 0.3s ease
       .ec-projects-card-background
         position absolute
         width 100%
@@ -86,10 +94,6 @@
         background no-repeat center
         border-radius 0.5em
         opacity 0.1
-        &:hover
-          opacity 0.3
-          transition 0.3s ease
-          //TODO Change opacity when over on title
       .selected
         opacity 0.3
         transition 0.3s ease
