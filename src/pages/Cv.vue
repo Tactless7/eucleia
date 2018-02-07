@@ -56,6 +56,7 @@
               <li><i class="fa fa-caret-right" aria-hidden="true"></i>Amélioration de l'API.</li>
               <li><i class="fa fa-caret-right" aria-hidden="true"></i>Conception et développement de l'Application Mobile Schoolmouv.</li>
             </ul>
+            <!-- TODO Ajouter les technos -->
           </div>
         </div>
         <div class="ec-cv-school-experiences-item">
@@ -72,6 +73,7 @@
               <li><i class="fa fa-caret-right" aria-hidden="true"></i>Automatisation de l'envoi à l'ensemble des collaborateurs de la société.</li>
               <li><i class="fa fa-caret-right" aria-hidden="true"></i>Gestion du projet depuis le cahier des charges jusqu'à la mise en production.</li>
             </ul>
+            <!-- TODO Ajouter les technos -->
           </div>
         </div>
       </div>
