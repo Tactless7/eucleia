@@ -1,6 +1,6 @@
 <template>
-  <div class="ec-projects">
-    <h3><i class="fa fa-flask" aria-hidden="true"></i>Projets</h3>
+  <div class="ec-projects" id="project">
+    <h3 ><i class="fa fa-flask" aria-hidden="true"></i>Projets</h3>
     <ec-project-details v-if="details" :project="this.projects[selected]"></ec-project-details>
     <div class="ec-projects-container">
       <div v-for="(project, index) in projects" class="ec-projects-card" @click="setSelected(index)">
@@ -34,9 +34,44 @@
       setSelected (number) {
         this.displayDetails(true)
         this.selected = number
+        this.scrollToDetails()
       },
       displayDetails (bool) {
         this.details = bool
+      },
+      scrollToDetails () {
+        let bodyRect = document.body.getBoundingClientRect()
+        let elementRect = document.getElementById('project').getBoundingClientRect()
+        console.log(elementRect)
+        /* Enlève 5px pour créer un décallage entre le haut de la page et le border top de l'élement */
+        let offset = elementRect.top - bodyRect.top - 5
+        this.smoothScroll(offset)
+      },
+      smoothScroll (end) {
+        let start = window.scrollY
+        let duration = 1000
+        let clock = Date.now()
+
+        let easing = (t) => {
+          // return t < 0.5 ? 4 * t * t * t : (t - 1) * (2 * t - 2) * (2 * t - 2) + 1 // easeInOutCubic
+          return 1 - (--t) * t * t * t // easeOutQuart
+        }
+        let position = (start, end, elapsed, duration) => {
+          if (elapsed > duration) {
+            return end
+          }
+          return start + (end - start) * easing(elapsed / 1000)
+        }
+        let step = () => {
+          let elapsed = Date.now() - clock
+          let positionY = position(start, end, elapsed, duration)
+          window.scroll(0, positionY)
+          if (elapsed <= duration) {
+            window.requestAnimationFrame(step)
+          }
+        }
+
+        step()
       }
     }
   }
