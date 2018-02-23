@@ -1,7 +1,14 @@
 <template>
   <div class="ec-project-details">
-    <div class="ec-project-details-pictures">
-
+    <div class="ec-project-details-pictures-viewer">
+      <div class="ec-project-details-picture-selected">
+        <img :src="selected" alt="">
+      </div>
+      <div class="ec-project-details-pictures">
+        <div v-for="(picture, index) of project.pictures" class="ec-project-details-pictures-thumbnail" :key="'picture' + index">
+          <img  alt="Screenshot du projet" :src="picture" @click="setSelected(index)">
+        </div>
+      </div>
     </div>
     <div class="ec-project-details-content">
       <h3>{{project.name}}</h3>
@@ -17,7 +24,17 @@
 <script>
   export default {
     name: 'ProjectDetails',
-    props: ['project']
+    props: ['project'],
+    data () {
+      return {
+        selected: this.project.pictures[0]
+      }
+    },
+    methods: {
+      setSelected (index) {
+        this.selected = this.project.pictures[index]
+      }
+    }
   }
 </script>
 
@@ -33,10 +50,41 @@
     padding 1em
     margin-bottom 1em
     box-shadow 0 3px 6px rgba(0,0,0,0.06)
-    .ec-project-details-pictures
+    .ec-project-details-pictures-viewer
+      display flex
+      flex-direction column
       min-width 50%
+      .ec-project-details-picture-selected
+        display flex
+        justify-content center
+        align-items center
+        width 100%
+        height 20em
+        margin-bottom 0.5em
+        img
+          max-height 100%
+          max-width 100%
+      .ec-project-details-pictures
+        display flex
+        justify-content space-around
+        max-width 100%
+        padding 1em
+        > div
+          display flex
+          justify-content center
+          align-items center
+          height 5em
+          width 7em
+          padding 0.5em
+          border 1px solid $grey
+          box-shadow 0 4px 6px rgba(0,0,0,0.06)
+          img
+            max-height 100%
+            max-width 100%
+
     .ec-project-details-content
       padding 1em
+      margin-left 2em
       h3
         font-size 1.6em
       p
