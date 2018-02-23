@@ -16,7 +16,7 @@
       <!-- TODO Plusieurs paragraphes pour la description -->
       <p class="ec-project-details-description">{{project.description}}</p>
       <p v-if="project.tools" class="ec-project-details-tools"><span>Technos utilisées : </span>{{project.tools}}</p>
-      <a :href="project.link"><p class="ec-project-details-link"><i :class="project.picto"></i> Lien</p></a>
+      <a :href="project.link"><p class="ec-project-details-link"><i :class="project.picto"></i>Voir</p></a>
     </div>
   </div>
 </template>
@@ -94,7 +94,7 @@
       a
         color $darkBlue
         text-decoration none
-        &:hover
+        &:hover:not(:last-of-type)
           font-style italic
       .ec-project-details-type
         margin-top 0
@@ -111,5 +111,11 @@
         span
           font-weight bold
       .ec-project-details-link
-        width auto
+        display inline
+        padding 0.3em 0.9em
+        border-radius 50px
+        background-color $darkBlue
+        color #fff
+        i
+          margin-right 0.5em
 </style>
