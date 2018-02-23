@@ -3,7 +3,7 @@
     <h3 ><i class="fa fa-flask" aria-hidden="true"></i>Projets</h3>
     <ec-project-details v-if="details" :project="this.projects[selected]"></ec-project-details>
     <div class="ec-projects-container">
-      <div v-for="(project, index) in projects" class="ec-projects-card" @click="setSelected(index)">
+      <div v-for="(project, index) in projects" :key="project.slug" class="ec-projects-card" @click="setSelected(index)">
         <div class="ec-projects-card-background" :class="{ selected: selected === index }" style="background-image: url(http://placekitten.com/g/500/500)"></div>
         <div class="ec-projects-card-content">
           <h4 class="ec-projects-card-title">{{project.name}}</h4>
