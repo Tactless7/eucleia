@@ -1,5 +1,16 @@
 let projects = [
   {
+    name: 'Portfolio',
+    slug: 'portfolio',
+    type: 'Side project',
+    year: 'Mars 2018',
+    description: 'J\'avais dans l\'idée d\'améliorer ma page Github résumant mon CV depuis la fin de la formation Simplon. J\'ai donc profité de ma découverte puis montée en compétences sur Vue.js pour l\'utiliser dans ce side-project.',
+    tools: 'Javascript ES6, Vue.js, Vue router, Stylus.',
+    link: 'https://github.com/Tactless7/eucleia',
+    picto: 'fa fa-github',
+    pictures: ['http://placekitten.com/g/1920/1080', 'http://placekitten.com/g/1200/740', 'http://placekitten.com/g/600/450']
+  },
+  {
     name: 'FACE Toulouse',
     slug: 'face-toulouse',
     type: 'Projet client',
