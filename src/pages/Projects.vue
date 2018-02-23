@@ -94,7 +94,7 @@
 
   .ec-projects
     max-width 80vw
-    margin 1em auto
+    margin 0 auto
     > h3
       font-size 1.9em
       margin-bottom 1em

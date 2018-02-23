@@ -16,7 +16,7 @@
       <!-- TODO Plusieurs paragraphes pour la description -->
       <p class="ec-project-details-description">{{project.description}}</p>
       <p v-if="project.tools" class="ec-project-details-tools"><span>Technos utilisées : </span>{{project.tools}}</p>
-      <a :href="project.link"><p class="ec-project-details-link"><i :class="project.picto"></i>Voir</p></a>
+      <a :href="project.link" target="_blank"><p class="ec-project-details-link"><i :class="project.picto"></i>Voir</p></a>
     </div>
   </div>
 </template>
