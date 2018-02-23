@@ -6,34 +6,70 @@
         <div class="ec-cv-skills-group">
           <h4>Langages</h4>
           <div class="ec-cv-skills-imgs">
-            <img src="/src/assets/img/languages/html_logo.png" alt="Html">
-            <img src="/src/assets/img/languages/css_logo.png" alt="Css">
-            <img src="/src/assets/img/languages/javascript_logo.png" alt="Javascript ES6">
-            <img src="/src/assets/img/languages/node_logo.png" alt="Node.js">
-            <img src="/src/assets/img/languages/php_logo.png" alt="PHP">
-            <img src="/src/assets/img/languages/mysql_logo.png" alt="mySQL">
+            <div class="ec-cv-skill-container">
+              <img src="/src/assets/img/languages/html_logo.png" alt="Html">
+            </div>
+            <div class="ec-cv-skill-container">
+              <img src="/src/assets/img/languages/css_logo.png" alt="Css">
+            </div>
+            <div class="ec-cv-skill-container">
+              <img src="/src/assets/img/languages/javascript_logo.png" alt="Javascript ES6">
+            </div>
+            <div class="ec-cv-skill-container">
+              <img src="/src/assets/img/languages/node_logo.png" alt="Node.js">
+            </div>
+            <div class="ec-cv-skill-container">
+              <img src="/src/assets/img/languages/php_logo.png" alt="PHP">
+            </div>
+            <div class="ec-cv-skill-container">
+              <img src="/src/assets/img/languages/mysql_logo.png" alt="mySQL">
+            </div>
           </div>
         </div>
         <div class="ec-cv-skills-group">
           <h4>Framework &amp; Libraries</h4>
           <div class="ec-cv-skills-imgs">
-            <img src="/src/assets/img/frameworks/vuejs_logo.svg" alt="Vue.js">
-            <img src="/src/assets/img/frameworks/mongo_logo.svg" alt="MongoDB">
-            <img src="/src/assets/img/frameworks/expressjs_logo.png" alt="Express.js">
-            <img src="/src/assets/img/frameworks/angular_logo.svg" alt="Angular 4">
-            <img src="/src/assets/img/frameworks/laravel_logo.png" alt="Laravel">
-            <img src="/src/assets/img/frameworks/sass_logo.png" alt="SASS">
+            <div class="ec-cv-skill-container">
+              <img src="/src/assets/img/frameworks/vuejs_logo.svg" alt="Vue.js">
+            </div>
+            <div class="ec-cv-skill-container">
+              <img src="/src/assets/img/frameworks/mongo_logo.svg" alt="MongoDB">
+            </div>
+            <div class="ec-cv-skill-container">
+              <img src="/src/assets/img/frameworks/expressjs_logo.png" alt="Express.js">
+            </div>
+            <div class="ec-cv-skill-container">
+              <img src="/src/assets/img/frameworks/angular_logo.svg" alt="Angular 4">
+            </div>
+            <div class="ec-cv-skill-container">
+              <img src="/src/assets/img/frameworks/laravel_logo.png" alt="Laravel">
+            </div>
+            <div class="ec-cv-skill-container">
+              <img src="/src/assets/img/frameworks/sass_logo.png" alt="SASS">
+            </div>
           </div>
         </div>
         <div class="ec-cv-skills-group">
           <h4>Outils</h4>
           <div class="ec-cv-skills-imgs">
-            <img src="/src/assets/img/tools/git_logo.png" alt="Git">
-            <img src="/src/assets/img/tools/rancher_logo.svg" alt="Rancher">
-            <img src="/src/assets/img/tools/docker_logo.png" alt="Docker">
-            <img src="/src/assets/img/tools/ionic_logo.svg" alt="Ionic">
-            <img src="/src/assets/img/tools/electron_logo.svg" alt="Electron" class="electron-img">
-            <img src="/src/assets/img/tools/postman_logo.png" alt="Postman">
+            <div class="ec-cv-skill-container">
+              <img src="/src/assets/img/tools/git_logo.png" alt="Git">
+            </div>
+            <div class="ec-cv-skill-container">
+              <img src="/src/assets/img/tools/rancher_logo.svg" alt="Rancher">
+            </div>
+            <div class="ec-cv-skill-container">
+              <img src="/src/assets/img/tools/docker_logo.png" alt="Docker">
+            </div>
+            <div class="ec-cv-skill-container">
+              <img src="/src/assets/img/tools/ionic_logo.svg" alt="Ionic">
+            </div>
+            <div class="ec-cv-skill-container">
+              <img src="/src/assets/img/tools/electron_logo.svg" alt="Electron" class="electron-img">
+            </div>
+            <div class="ec-cv-skill-container">
+              <img src="/src/assets/img/tools/postman_logo.png" alt="Postman">
+            </div>
           </div>
         </div>
       </div>
@@ -138,7 +174,8 @@
         display flex
         justify-content space-between
         > .ec-cv-skills-group
-          width 30%
+          width 300px
+          height 300px
           padding 1em;
           border 2px solid $darkBlue
           h4
@@ -146,16 +183,23 @@
             font-size 1.4em
             margin-bottom 1em
           .ec-cv-skills-imgs
-            width 100%
-            padding 5%
-            img
-              max-width 30%
-              max-height 200px
-              margin 1%
-              &:hover
-                transform scale(1.3)
-            .electron-img
-              padding 0.5em
+            display flex
+            justify-content space-around
+            flex-wrap wrap
+            .ec-cv-skill-container
+              display flex
+              justify-content center
+              align-items center
+              max-width 33.3%
+              max-height 25%
+              margin 0.5em 0
+              img
+                width 100%
+                padding 0.5em
+                &:hover
+                  transform scale(1.3)
+              .electron-img
+                padding 0.7em
 
     .ec-cv-school-experiences-item
       display flex

@@ -111,8 +111,8 @@
       height 300px
       margin 1em 0
       border solid $grey 1px
-      border-top solid $orange 2px
-      border-radius 0.5em
+      // border-top solid $orange 2px
+      // border-radius 0.5em
       cursor pointer
       &:hover
         .ec-projects-card-background
@@ -123,7 +123,7 @@
         width 100%
         height 100%
         background no-repeat center
-        border-radius 0.5em
+        // border-radius 0.5em
         opacity 0.1
       .selected
         opacity 0.3
