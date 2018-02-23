@@ -32,8 +32,12 @@
     },
     methods: {
       setSelected (number) {
-        this.displayDetails(true)
+        this.$router.push({
+          name: 'Projet',
+          params: { project: this.projects[number].slug }
+        })
         this.selected = number
+        this.displayDetails(true)
         this.scrollToDetails()
       },
       displayDetails (bool) {
@@ -42,14 +46,13 @@
       scrollToDetails () {
         let bodyRect = document.body.getBoundingClientRect()
         let elementRect = document.getElementById('project').getBoundingClientRect()
-        console.log(elementRect)
         /* Enlève 5px pour créer un décallage entre le haut de la page et le border top de l'élement */
         let offset = elementRect.top - bodyRect.top - 5
         this.smoothScroll(offset)
       },
       smoothScroll (end) {
         let start = window.scrollY
-        let duration = 1000
+        let duration = 700
         let clock = Date.now()
 
         let easing = (t) => {
@@ -73,6 +76,15 @@
 
         step()
       }
+    },
+    created () {
+      let slug = this.$route.params.project
+      this.projects.map((project, index) => {
+        if (project.slug === slug) {
+          this.selected = index
+          this.displayDetails(true)
+        }
+      })
     }
   }
 </script>

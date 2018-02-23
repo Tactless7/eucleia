@@ -41,7 +41,16 @@ export default new Router({
     },
     {
       path: '/projets',
-      name: 'Cv',
+      name: 'Projets',
+      components: {
+        header: Header,
+        content: Projects,
+        footer: Footer
+      }
+    },
+    {
+      path: '/projets/:project',
+      name: 'Projet',
       components: {
         header: Header,
         content: Projects,

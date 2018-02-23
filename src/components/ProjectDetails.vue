@@ -60,4 +60,6 @@
         font-style italic
         span
           font-weight bold
+      .ec-project-details-link
+        width auto
 </style>
