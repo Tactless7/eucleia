@@ -5,8 +5,8 @@
         <img :src="selected" alt="">
       </div>
       <div class="ec-project-details-pictures">
-        <div v-for="(picture, index) of project.pictures" class="ec-project-details-pictures-thumbnail" :key="'picture' + index">
-          <img  alt="Screenshot du projet" :src="picture" @click="setSelected(index)">
+        <div v-for="(picture, index) of project.pictures" :class="{ 'selected' : picture === selected}" class="ec-project-details-pictures-thumbnail" :key="'picture' + index">
+          <img alt="Screenshot du projet" :src="picture" @click="setSelected(index)">
         </div>
       </div>
     </div>
@@ -77,7 +77,9 @@
           width 7em
           padding 0.5em
           border 1px solid $grey
-          box-shadow 0 4px 6px rgba(0,0,0,0.06)
+          cursor pointer
+          &:hover, &.selected
+            box-shadow 0 5px 7px rgba(0,0,0,0.06)
           img
             max-height 100%
             max-width 100%
