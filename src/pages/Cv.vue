@@ -32,7 +32,7 @@
             <img src="/src/assets/img/tools/rancher_logo.svg" alt="Rancher">
             <img src="/src/assets/img/tools/docker_logo.png" alt="Docker">
             <img src="/src/assets/img/tools/ionic_logo.svg" alt="Ionic">
-            <img src="/src/assets/img/tools/firebase_logo.png" alt="Firebase">
+            <img src="/src/assets/img/tools/electron_logo.svg" alt="Electron" class="electron-img">
             <img src="/src/assets/img/tools/postman_logo.png" alt="Postman">
           </div>
         </div>
@@ -154,6 +154,9 @@
               margin 1%
               &:hover
                 transform scale(1.3)
+            .electron-img
+              padding 0.5em
+
     .ec-cv-school-experiences-item
       display flex
       justify-content space-between
