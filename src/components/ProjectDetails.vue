@@ -116,6 +116,8 @@
         border-radius 50px
         background-color $darkBlue
         color #fff
+        &:hover
+          background-color #3A5066
         i
           margin-right 0.5em
 </style>

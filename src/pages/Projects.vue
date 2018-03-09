@@ -4,7 +4,7 @@
     <ec-project-details v-if="details" :project="this.projects[selected]"></ec-project-details>
     <div class="ec-projects-container">
       <div v-for="(project, index) in projects" :key="project.slug" class="ec-projects-card" @click="setSelected(index)">
-        <div class="ec-projects-card-background" :class="{ selected: selected === index }" style="background-image: url(http://placekitten.com/g/500/500)"></div>
+        <div class="ec-projects-card-background" :class="{ selected: selected === index }" :style="`background-image: url(${project.pictures[0]})`"></div>
         <div class="ec-projects-card-content">
           <h4 class="ec-projects-card-title">{{project.name}}</h4>
           <p class="ec-projects-card-type">{{project.type}}</p>
@@ -111,8 +111,6 @@
       height 300px
       margin 1em 0
       border solid $grey 1px
-      // border-top solid $orange 2px
-      // border-radius 0.5em
       cursor pointer
       &:hover
         .ec-projects-card-background
@@ -123,7 +121,7 @@
         width 100%
         height 100%
         background no-repeat center
-        // border-radius 0.5em
+        background-size cover
         opacity 0.1
       .selected
         opacity 0.3
