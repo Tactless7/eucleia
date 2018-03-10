@@ -1,6 +1,6 @@
 <template>
   <div class="ec-status">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta libero vel, quaerat alias laudantium labore.</p>
+    <p>Étant actuellement en poste, je ne suis pas en recherche active mais plutôt à l'écoute du marché.</p>
   </div>
 </template>
 

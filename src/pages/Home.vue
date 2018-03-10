@@ -35,7 +35,7 @@
     .ec-homepage-left
       display flex
       flex-direction column
-      justify-content space-around
+      justify-content center
       max-width 60vw
 
 </style>

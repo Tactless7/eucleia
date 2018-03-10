@@ -1,8 +1,9 @@
 <template>
   <div class="ec-presentation">
-    <p class="ec-presentation-item">Nunc vero inanes flatus quorundam vile esse quicquid extra urbis pomerium nascitur aestimant praeter orbos et caelibes, nec credi potest qua obsequiorum diversitate coluntur homines sine liberis Romae.</p>
-    <p class="ec-presentation-item">Quo cognito Constantius ultra mortalem modum exarsit ac nequo casu idem Gallus de futuris incertus agitare quaedam conducentia saluti suae per itinera conaretur, remoti sunt omnes de industria milites agentes in civitatibus perviis.</p>
-    <p class="ec-presentation-item">Et est admodum mirum videre plebem innumeram mentibus ardore quodam infuso cum dimicationum curulium eventu pendentem. haec similiaque memorabile nihil vel serium agi Romae permittunt. ergo redeundum ad textum.</p>
+    <p class="ec-presentation-item">Développeuse Web passionnée par mon métier, j'ai un parcours un peu atypique. Comme beaucoup je suis tombée amoureuse des ordinateurs et d'internet dès l'enfance. Je ne compte plus les heures passées à monter/démonter mon PC, bidouiller des solutions trouvées sur le net, formater ou encore réparer les ordis de mes proches.</p>
+    <p class="ec-presentation-item">Après l'obtention d'un Master en Marketing, j'ai abandonné le Webmarketing pour opérer une reconversion dans le développement Web. Six mois très intenses plus tard, je terminais la formation de Simplon après près de 800 heures à coder en HTML, CSS, Javascript et PHP.</p>
+    <p class="ec-presentation-item">C'était le début d'une nouvelle aventure, qui m'a menée tout droit vers Schoolmouv où je suis Développeuse Web Javascript.</p>
+    <p class="ec-presentation-item">To be continued...</p>
   </div>
 </template>
 
@@ -20,5 +21,12 @@
     margin 1em
     p
       color $darkBlue
+      text-align justify
+      &:not(last-of-type)
+        margin-bottom 0.5em
+      &:last-of-type
+        margin-top 1em
+        font-size 1.2em
+        text-align center
 
 </style>
