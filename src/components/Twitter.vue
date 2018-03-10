@@ -1,6 +1,8 @@
 <template>
   <div class="ec-twitter">
-    Twitter Component
+    <a class="twitter-timeline" data-width="300" data-height="400" data-theme="light" data-link-color="#E95F28" href="https://twitter.com/Tactless7?ref_src=twsrc%5Etfw">
+      Tweets by Tactless7
+    </a>
   </div>
 </template>
 
@@ -14,8 +16,6 @@
   @import '../colors.styl'
   
   .ec-twitter
-    width 25vw // To check
-    height 400px // To check
-    border solid black 1px
+    border solid $grey 1px
     margin 1em
 </style>
