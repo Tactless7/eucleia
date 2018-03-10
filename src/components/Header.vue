@@ -1,12 +1,12 @@
 <template>
   <div class="ec-header">
     <ul class="ec-header-navbar">
-      <li><a href="/">Home</a></li>
+      <li :class="{selected: name === 'Home'}"><a href="/">Home</a></li>
       <!-- <li><a href="/about">A propos</a></li> -->
-      <li><a href="/cv">CV</a></li>
-      <li><a href="/projets">Projets</a></li>
-      <li><a href="/blog">Blog</a></li>
-      <li><a href="/contact">Contact</a></li>
+      <li :class="{selected: name === 'Cv'}"><a href="/cv">CV</a></li>
+      <li :class="{selected: name === 'Projets'}"><a href="/projets">Projets</a></li>
+      <li :class="{selected: name === 'Blog'}"><a href="/blog">Blog</a></li>
+      <li :class="{selected: name === 'Contact'}"><a href="/contact">Contact</a></li>
     </ul>
 
     <div class="ec-header-title">
@@ -24,7 +24,15 @@
 
 <script>
   export default {
-    name: 'Header'
+    name: 'Header',
+    data () {
+      return {
+        name: ''
+      }
+    },
+    created () {
+      this.name = this.$route.name
+    }
   }
 </script>
 
@@ -44,6 +52,8 @@
       display flex
       justify-content flex-end
       list-style-type none
+      .selected
+        border-bottom 0.2em solid $orange
       > li
         margin 1em
         padding-bottom 0.2em
