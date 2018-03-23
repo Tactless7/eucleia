@@ -2,11 +2,11 @@
   <div class="ec-header">
     <ul class="ec-header-navbar">
       <li :class="{selected: name === 'Home'}"><a href="/">Home</a></li>
-      <!-- <li><a href="/about">A propos</a></li> -->
       <li :class="{selected: name === 'Cv'}"><a href="/cv">CV</a></li>
       <li :class="{selected: name === 'Projets'}"><a href="/projets">Projets</a></li>
+      <li :class="{selected: name === 'Apropos'}"><a href="/a-propos">A propos</a></li>
       <li :class="{selected: name === 'Blog'}"><a href="/blog">Blog</a></li>
-      <li :class="{selected: name === 'Contact'}"><a href="/contact">Contact</a></li>
+      <!-- <li :class="{selected: name === 'Contact'}"><a href="/contact">Contact</a></li> -->
     </ul>
 
     <div class="ec-header-title">

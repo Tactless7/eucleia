@@ -6,6 +6,7 @@ import Home from '@/pages/Home'
 import Blog from '@/pages/Blog'
 import Cv from '@/pages/Cv'
 import Projects from '@/pages/Projects'
+import Apropos from '@/pages/Apropos'
 
 Vue.use(Router)
 
@@ -54,6 +55,15 @@ export default new Router({
       components: {
         header: Header,
         content: Projects,
+        footer: Footer
+      }
+    },
+    {
+      path: '/a-propos',
+      name: 'Apropos',
+      components: {
+        header: Header,
+        content: Apropos,
         footer: Footer
       }
     }
