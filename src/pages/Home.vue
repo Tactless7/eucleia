@@ -19,6 +19,12 @@
       ecPresentation,
       ecStatus,
       ecTwitter
+    },
+    metaInfo: {
+      title: 'Juliane Blier - Développeuse Web',
+      meta: [
+        { vmid: 'description', name: 'description', content: 'Bienvenue sur le site personnel de Juliane Blier, développeuse web javascript chez Schoolmouv' }
+      ]
     }
   }
 </script>

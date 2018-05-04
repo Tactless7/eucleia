@@ -46,7 +46,14 @@
 
 <script>
   export default {
-    name: 'Apropos'
+    name: 'Apropos',
+    metaInfo: {
+      title: 'A propos',
+      titleTemplate: '%s | Juliane Blier - Développeuse Web',
+      meta: [
+        { vmid: 'description', name: 'description', content: 'En savoir plus et contacter Juliane Blier, développeuse web javascript chez Schoolmouv.' }
+      ]
+    }
   }
 </script>
 

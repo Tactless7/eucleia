@@ -23,6 +23,13 @@
     components: {
       ecProjectDetails
     },
+    metaInfo: {
+      title: 'Portfolio',
+      titleTemplate: '%s | Juliane Blier - Développeuse Web',
+      meta: [
+        { vmid: 'description', name: 'description', content: 'Retrouvez les projets de Juliane Blier, développeuse web javascript chez Schoolmouv dans ce portfolio' }
+      ]
+    },
     data () {
       return {
         selected: null,

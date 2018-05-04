@@ -147,7 +147,14 @@
 
 <script>
   export default {
-    name: 'Cv'
+    name: 'Cv',
+    metaInfo: {
+      title: 'CV',
+      titleTemplate: '%s | Juliane Blier - Développeuse Web',
+      meta: [
+        { vmid: 'description', name: 'description', content: 'CV de Juliane Blier, développeuse web javascript chez Schoolmouv' }
+      ]
+    }
   }
 </script>
 
