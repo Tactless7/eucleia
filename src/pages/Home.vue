@@ -23,7 +23,7 @@
     metaInfo: {
       title: 'Juliane Blier - Développeuse Web',
       meta: [
-        { vmid: 'description', name: 'description', content: 'Bienvenue sur le site personnel de Juliane Blier, développeuse web javascript chez Schoolmouv' }
+        { vmid: 'description', name: 'description', content: 'Bienvenue sur le site personnel de Juliane Blier, développeuse web chez Schoolmouv. Vous y trouverez mon CV et les projets sur lesquels j\'ai eu l\'occasion de travailler.' }
       ]
     }
   }

@@ -14,7 +14,7 @@
       title: 'Blog',
       titleTemplate: '%s | Juliane Blier - Développeuse Web',
       meta: [
-        { vmid: 'description', name: 'description', content: 'Retrouvez ici les quelques articles de blogs de Juliane Blier, développeuse web javascript chez Schoolmouv' }
+        { vmid: 'description', name: 'description', content: 'Retrouvez ici les quelques articles de blogs de Juliane Blier, développeuse web javascript chez Schoolmouv.' }
       ]
     }
   }

@@ -27,7 +27,7 @@
       title: 'Portfolio',
       titleTemplate: '%s | Juliane Blier - Développeuse Web',
       meta: [
-        { vmid: 'description', name: 'description', content: 'Retrouvez les projets de Juliane Blier, développeuse web javascript chez Schoolmouv dans ce portfolio' }
+        { vmid: 'description', name: 'description', content: 'Retrouvez les projets de Juliane Blier, développeuse web, dans ce portfolio. Vous y découvrirez différents projets sur lesquels j\'ai pu travailler.' }
       ]
     },
     data () {

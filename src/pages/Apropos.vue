@@ -51,7 +51,7 @@
       title: 'A propos',
       titleTemplate: '%s | Juliane Blier - Développeuse Web',
       meta: [
-        { vmid: 'description', name: 'description', content: 'En savoir plus et contacter Juliane Blier, développeuse web javascript chez Schoolmouv.' }
+        { vmid: 'description', name: 'description', content: 'En savoir plus et contacter Juliane Blier, développeuse web. Vous y trouverez une liste de mes hobbies ainsi que divers moyens de me contacter.' }
       ]
     }
   }
