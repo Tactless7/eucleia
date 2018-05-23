@@ -49,7 +49,7 @@ let projects = [
   },
   {
     name: 'Adaptathon',
-    slug: 'adaptaton',
+    slug: 'adaptathon',
     type: 'Hackathon',
     year: 'Novembre 2016',
     description:
