@@ -33,8 +33,9 @@
   @import '../colors.styl'
 
   .ec-homepage
-    width 100%
+    width 80%
     height auto
+    margin auto
     display flex
     flex-direction row
     justify-content space-around

@@ -1,6 +1,6 @@
 <template>
   <div class="ec-status">
-    <p>Étant actuellement en poste, je ne suis pas en recherche active mais plutôt à l'écoute du marché.</p>
+    <p>Étant actuellement en poste, je ne suis pas en recherche active mais je reste à l'écoute d'opportunités.</p>
   </div>
 </template>
 
