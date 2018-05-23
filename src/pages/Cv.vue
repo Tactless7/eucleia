@@ -152,7 +152,11 @@
       title: 'CV',
       titleTemplate: '%s | Juliane Blier - Développeuse Web',
       meta: [
-        { vmid: 'description', name: 'description', content: 'Vous pouvez trouver ici le CV de Juliane Blier, développeuse web. J\'y liste les langages de programmation, frameworks et outils que j\'ai pu utiliser au cours de mes différentes expériences professionnelles.'}
+        {
+          vmid: 'description',
+          name: 'description',
+          content: 'Vous pouvez trouver ici le CV de Juliane Blier, développeuse web. J\'y liste les langages de programmation, frameworks et outils que j\'ai pu utiliser au cours de mes différentes expériences professionnelles.'
+        }
       ]
     }
   }
