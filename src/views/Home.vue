@@ -9,24 +9,29 @@
 </template>
 
 <script>
-  import ecPresentation from '../components/Presentation'
-  import ecStatus from '../components/Status'
-  import ecTwitter from '../components/Twitter'
-  
-  export default {
-    name: 'Home',
-    components: {
-      ecPresentation,
-      ecStatus,
-      ecTwitter
-    },
-    metaInfo: {
-      title: 'Juliane Blier - Développeuse Web',
-      meta: [
-        { vmid: 'description', name: 'description', content: 'Bienvenue sur le site personnel de Juliane Blier, développeuse web chez Schoolmouv. Vous y trouverez mon CV et les projets sur lesquels j\'ai eu l\'occasion de travailler.' }
-      ]
-    }
+import ecPresentation from '../components/Presentation'
+import ecStatus from '../components/Status'
+import ecTwitter from '../components/Twitter'
+
+export default {
+  name: 'Home',
+  components: {
+    ecPresentation,
+    ecStatus,
+    ecTwitter
+  },
+  metaInfo: {
+    title: 'Juliane Blier - Développeuse Web',
+    meta: [
+      {
+        vmid: 'description',
+        name: 'description',
+        content:
+          "Bienvenue sur le site personnel de Juliane Blier, développeuse web chez Schoolmouv. Vous y trouverez mon CV et les projets sur lesquels j'ai eu l'occasion de travailler."
+      }
+    ]
   }
+}
 </script>
 
 <style lang="stylus">

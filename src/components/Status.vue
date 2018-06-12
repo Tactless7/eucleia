@@ -5,14 +5,14 @@
 </template>
 
 <script>
-  export default {
-    name: 'Status'
-  }
+export default {
+  name: 'Status'
+}
 </script>
 
 <style lang="stylus">
   @import '../colors.styl'
-  
+
   .ec-status
     width 50vw
     margin 1em

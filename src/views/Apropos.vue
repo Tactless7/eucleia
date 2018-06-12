@@ -7,7 +7,7 @@
         <p><i class="fa fa-map-o"></i> Toulouse</p>
         <p><a href="tel:+33695024495"><i class="fa fa-phone"></i>+33 (0)6 95 02 44 95</a></p>
         <p><a href="mailto:blier.juliane@gmail.com"><i class="fa fa-envelope"></i>blier.juliane@gmail.com</a></p>
-        
+
         <div class="ec-about-social">
           <a href="https://fr.linkedin.com/in/juliane-blier-428b8b49"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
           <a href="https://github.com/Tactless7"><i class="fa fa-github" aria-hidden="true"></i></a>
@@ -45,16 +45,21 @@
 </template>
 
 <script>
-  export default {
-    name: 'Apropos',
-    metaInfo: {
-      title: 'A propos',
-      titleTemplate: '%s | Juliane Blier - Développeuse Web',
-      meta: [
-        { vmid: 'description', name: 'description', content: 'En savoir plus et contacter Juliane Blier, développeuse web. Vous y trouverez une liste de mes hobbies ainsi que divers moyens de me contacter.' }
-      ]
-    }
+export default {
+  name: 'Apropos',
+  metaInfo: {
+    title: 'A propos',
+    titleTemplate: '%s | Juliane Blier - Développeuse Web',
+    meta: [
+      {
+        vmid: 'description',
+        name: 'description',
+        content:
+          'En savoir plus et contacter Juliane Blier, développeuse web. Vous y trouverez une liste de mes hobbies ainsi que divers moyens de me contacter.'
+      }
+    ]
   }
+}
 </script>
 
 <style lang="stylus">
@@ -87,7 +92,7 @@
             color black
         a
           text-decoration none
-          color $darkBlue          
+          color $darkBlue
         .ec-about-social
           display flex
           justify-content space-around
@@ -111,7 +116,6 @@
               max-height 1em
               margin-right 0.5em
 
-        
     .ec-about-right
       width 50%
       padding-left 3em

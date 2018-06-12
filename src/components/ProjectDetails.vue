@@ -22,20 +22,20 @@
 </template>
 
 <script>
-  export default {
-    name: 'ProjectDetails',
-    props: ['project'],
-    data () {
-      return {
-        selected: this.project.pictures[0]
-      }
-    },
-    methods: {
-      setSelected (index) {
-        this.selected = this.project.pictures[index]
-      }
+export default {
+  name: 'ProjectDetails',
+  props: ['project'],
+  data () {
+    return {
+      selected: this.project.pictures[0]
+    }
+  },
+  methods: {
+    setSelected (index) {
+      this.selected = this.project.pictures[index]
     }
   }
+}
 </script>
 
 <style lang="stylus">

@@ -8,9 +8,9 @@
 </template>
 
 <script>
-  export default {
-    name: 'Presentation'
-  }
+export default {
+  name: 'Presentation'
+}
 </script>
 
 <style lang="stylus">

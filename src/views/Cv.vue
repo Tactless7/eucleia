@@ -142,24 +142,25 @@
       </div>
     </section>
   </div>
-  
+
 </template>
 
 <script>
-  export default {
-    name: 'Cv',
-    metaInfo: {
-      title: 'CV',
-      titleTemplate: '%s | Juliane Blier - Développeuse Web',
-      meta: [
-        {
-          vmid: 'description',
-          name: 'description',
-          content: 'Vous pouvez trouver ici le CV de Juliane Blier, développeuse web. J\'y liste les langages de programmation, frameworks et outils que j\'ai pu utiliser au cours de mes différentes expériences professionnelles.'
-        }
-      ]
-    }
+export default {
+  name: 'Cv',
+  metaInfo: {
+    title: 'CV',
+    titleTemplate: '%s | Juliane Blier - Développeuse Web',
+    meta: [
+      {
+        vmid: 'description',
+        name: 'description',
+        content:
+          "Vous pouvez trouver ici le CV de Juliane Blier, développeuse web. J'y liste les langages de programmation, frameworks et outils que j'ai pu utiliser au cours de mes différentes expériences professionnelles."
+      }
+    ]
   }
+}
 </script>
 
 <style lang="stylus">
@@ -260,7 +261,7 @@
             line-height 2em
             i
               margin-right 0.5em
-  
+
   .flex-column
     flex-direction column
 </style>

@@ -23,22 +23,22 @@
 </template>
 
 <script>
-  export default {
-    name: 'Header',
-    data () {
-      return {
-        name: ''
-      }
-    },
-    created () {
-      this.name = this.$route.name
+export default {
+  name: 'Header',
+  data () {
+    return {
+      name: ''
     }
+  },
+  created () {
+    this.name = this.$route.name
   }
+}
 </script>
 
 <style lang="stylus">
   @import '../colors.styl'
-  
+
   .ec-header
     margin-bottom 2em
     &:after
@@ -65,7 +65,7 @@
         a
           color $darkBlue
           text-decoration none
-    
+
     .ec-header-title
       display flex
       flex-direction row

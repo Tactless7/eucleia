@@ -7,14 +7,14 @@
 </template>
 
 <script>
-  export default {
-    name: 'Twitter'
-  }
+export default {
+  name: 'Twitter'
+}
 </script>
 
 <style lang="stylus">
   @import '../colors.styl'
-  
+
   .ec-twitter
     border solid $grey 1px
     margin 1em

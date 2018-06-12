@@ -4,7 +4,7 @@
       <a href="/legals">Mentions légales</a>
     </div>
     <div class="ec-footer-love">
-      <span> Handmade with <i class="fa fa-heart"></i></span> 
+      <span> Handmade with <i class="fa fa-heart"></i></span>
     </div>
     <div class="ec-footer-social">
       <a href="https://github.com/Tactless7"><i class="fa fa-lg fa-github" aria-hidden="true"></i></a>
@@ -15,9 +15,9 @@
 </template>
 
 <script>
-  export default {
-    name: 'Footer'
-  }
+export default {
+  name: 'Footer'
+}
 </script>
 
 <style lang="stylus">
@@ -56,4 +56,3 @@
           &:hover
             transform scale(1.1)
 </style>
-

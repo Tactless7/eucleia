@@ -8,16 +8,21 @@
 </template>
 
 <script>
-  export default {
-    name: 'Blog',
-    metaInfo: {
-      title: 'Blog',
-      titleTemplate: '%s | Juliane Blier - Développeuse Web',
-      meta: [
-        { vmid: 'description', name: 'description', content: 'Retrouvez ici les quelques articles de blogs de Juliane Blier, développeuse web javascript chez Schoolmouv.' }
-      ]
-    }
+export default {
+  name: 'Blog',
+  metaInfo: {
+    title: 'Blog',
+    titleTemplate: '%s | Juliane Blier - Développeuse Web',
+    meta: [
+      {
+        vmid: 'description',
+        name: 'description',
+        content:
+          'Retrouvez ici les quelques articles de blogs de Juliane Blier, développeuse web javascript chez Schoolmouv.'
+      }
+    ]
   }
+}
 </script>
 
 <style lang="stylus">
@@ -44,4 +49,3 @@
         font-size 2.5em
         font-style italic
 </style>
-
