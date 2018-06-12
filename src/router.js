@@ -3,11 +3,11 @@ import Router from 'vue-router'
 import Meta from 'vue-meta'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
-import Home from '@/pages/Home'
-import Blog from '@/pages/Blog'
-import Cv from '@/pages/Cv'
-import Projects from '@/pages/Projects'
-import Apropos from '@/pages/Apropos'
+import Home from '@/views/Home'
+import Blog from '@/views/Blog'
+import Cv from '@/views/Cv'
+import Projects from '@/views/Projects'
+import Apropos from '@/views/Apropos'
 
 Vue.use(Router)
 Vue.use(Meta)
