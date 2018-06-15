@@ -1,7 +1,7 @@
 <template>
   <div class="ec-blog">
     <div class="ec-blog-work-in-progress">
-      <img src="../assets/work.jpg" alt="Work in Progress">
+      <img src="@/assets/work.jpg" alt="Work in Progress">
       <p>Work in progress...</p>
     </div>
   </div>

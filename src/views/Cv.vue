@@ -7,22 +7,22 @@
           <h4>Langages</h4>
           <div class="ec-cv-skills-imgs">
             <div class="ec-cv-skill-container">
-              <img src="/src/assets/img/languages/html_logo.png" alt="Html">
+              <img src="@/assets/img/languages/html_logo.png" alt="Html">
             </div>
             <div class="ec-cv-skill-container">
-              <img src="/src/assets/img/languages/css_logo.png" alt="Css">
+              <img src="@/assets/img/languages/css_logo.png" alt="Css">
             </div>
             <div class="ec-cv-skill-container">
-              <img src="/src/assets/img/languages/javascript_logo.png" alt="Javascript ES6">
+              <img src="@/assets/img/languages/javascript_logo.png" alt="Javascript ES6">
             </div>
             <div class="ec-cv-skill-container">
-              <img src="/src/assets/img/languages/node_logo.png" alt="Node.js">
+              <img src="@/assets/img/languages/node_logo.png" alt="Node.js">
             </div>
             <div class="ec-cv-skill-container">
-              <img src="/src/assets/img/languages/php_logo.png" alt="PHP">
+              <img src="@/assets/img/languages/php_logo.png" alt="PHP">
             </div>
             <div class="ec-cv-skill-container">
-              <img src="/src/assets/img/languages/mysql_logo.png" alt="mySQL">
+              <img src="@/assets/img/languages/mysql_logo.png" alt="mySQL">
             </div>
           </div>
         </div>
@@ -30,22 +30,22 @@
           <h4>Framework &amp; Libraries</h4>
           <div class="ec-cv-skills-imgs">
             <div class="ec-cv-skill-container">
-              <img src="/src/assets/img/frameworks/vuejs_logo.svg" alt="Vue.js">
+              <img src="@/assets/img/frameworks/vuejs_logo.svg" alt="Vue.js">
             </div>
             <div class="ec-cv-skill-container">
-              <img src="/src/assets/img/frameworks/mongo_logo.svg" alt="MongoDB">
+              <img src="@/assets/img/frameworks/mongo_logo.svg" alt="MongoDB">
             </div>
             <div class="ec-cv-skill-container">
-              <img src="/src/assets/img/frameworks/expressjs_logo.png" alt="Express.js">
+              <img src="@/assets/img/frameworks/expressjs_logo.png" alt="Express.js">
             </div>
             <div class="ec-cv-skill-container">
-              <img src="/src/assets/img/frameworks/angular_logo.svg" alt="Angular 4">
+              <img src="@/assets/img/frameworks/angular_logo.svg" alt="Angular 4">
             </div>
             <div class="ec-cv-skill-container">
-              <img src="/src/assets/img/frameworks/laravel_logo.png" alt="Laravel">
+              <img src="@/assets/img/frameworks/laravel_logo.png" alt="Laravel">
             </div>
             <div class="ec-cv-skill-container">
-              <img src="/src/assets/img/frameworks/sass_logo.png" alt="SASS">
+              <img src="@/assets/img/frameworks/sass_logo.png" alt="SASS">
             </div>
           </div>
         </div>
@@ -53,22 +53,22 @@
           <h4>Outils</h4>
           <div class="ec-cv-skills-imgs">
             <div class="ec-cv-skill-container">
-              <img src="/src/assets/img/tools/git_logo.png" alt="Git">
+              <img src="@/assets/img/tools/git_logo.png" alt="Git">
             </div>
             <div class="ec-cv-skill-container">
-              <img src="/src/assets/img/tools/rancher_logo.svg" alt="Rancher">
+              <img src="@/assets/img/tools/rancher_logo.svg" alt="Rancher">
             </div>
             <div class="ec-cv-skill-container">
-              <img src="/src/assets/img/tools/docker_logo.png" alt="Docker">
+              <img src="@/assets/img/tools/docker_logo.png" alt="Docker">
             </div>
             <div class="ec-cv-skill-container">
-              <img src="/src/assets/img/tools/ionic_logo.svg" alt="Ionic">
+              <img src="@/assets/img/tools/ionic_logo.svg" alt="Ionic">
             </div>
             <div class="ec-cv-skill-container">
-              <img src="/src/assets/img/tools/electron_logo.svg" alt="Electron" class="electron-img">
+              <img src="@/assets/img/tools/electron_logo.svg" alt="Electron" class="electron-img">
             </div>
             <div class="ec-cv-skill-container">
-              <img src="/src/assets/img/tools/postman_logo.png" alt="Postman">
+              <img src="@/assets/img/tools/postman_logo.png" alt="Postman">
             </div>
           </div>
         </div>
@@ -83,7 +83,7 @@
             <div>
               <h4>Développeuse Fullstack JS</h4>
               <p>Depuis Juin 2017</p>
-              <a href="https://www.schoolmouv.fr"><img src="/src/assets/img/experiences/logo_schoolmouv_couleur.svg" alt="Logo Schoolmouv"></a>
+              <a href="https://www.schoolmouv.fr"><img src="@/assets/img/experiences/logo_schoolmouv_couleur.svg" alt="Logo Schoolmouv"></a>
             </div>
           </div>
           <div class="right-side">
@@ -100,7 +100,7 @@
             <div>
               <h4>Développeuse Javascript</h4>
               <p>Avril 2017 - Mai 2017</p>
-              <img src="/src/assets/img/experiences/cityliv_logo.png" alt="Logo CityLiv">
+              <img src="@/assets/img/experiences/cityliv_logo.png" alt="Logo CityLiv">
             </div>
           </div>
           <div class="right-side">
@@ -123,7 +123,7 @@
             <div>
               <h4>Formation Développement web</h4>
               <p>Septembre 2016 - Mars 2017</p>
-              <a href="https://simplon.co"><img src="/src/assets/img/experiences/simplon_logo.png" alt="Logo Simplon"></a>
+              <a href="https://simplon.co"><img src="@/assets/img/experiences/simplon_logo.png" alt="Logo Simplon"></a>
             </div>
           </div>
           <div class="right-side">

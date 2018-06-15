@@ -17,9 +17,9 @@
         <div class="ec-about-languages">
           <h3>Langues</h3>
           <ul>
-            <li><img src="/src/assets/img/flags/fr_flag.png" alt="Drapeau Français">Français maternel</li>
-            <li><img src="/src/assets/img/flags/en_flag.png" alt="Drapeau Anglais">Anglais courant</li>
-            <li><img src="/src/assets/img/flags/es_flag.png" alt="Drapeau Espagnol">Espagnol courant</li>
+            <li><img src="@/assets/img/flags/fr_flag.png" alt="Drapeau Français">Français maternel</li>
+            <li><img src="@/assets/img/flags/en_flag.png" alt="Drapeau Anglais">Anglais courant</li>
+            <li><img src="@/assets/img/flags/es_flag.png" alt="Drapeau Espagnol">Espagnol courant</li>
           </ul>
         </div>
       </div>

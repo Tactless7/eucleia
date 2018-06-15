@@ -11,7 +11,7 @@
 
     <div class="ec-header-title">
       <div class="ec-header-photo">
-        <img src="/src/assets/photo_bw.png" alt="Photo Juliane Blier">
+        <img src="@/assets/photo_bw.png" alt="Photo Juliane Blier">
       </div>
       <div class="ec-header-title-content">
         <h1>Juliane Blier</h1>
